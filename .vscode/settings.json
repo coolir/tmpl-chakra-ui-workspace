@@ -6,9 +6,29 @@
   "[javascript]": {
     "editor.formatOnSave": false
   },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "eslint.validate": ["javascript", "javascriptreact"],
-  "cSpell.words": ["chakra"]
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.onIgnoredFiles": "warn",
+  "eslint.workingDirectories": [
+    {
+      "pattern": "packages/*",
+      "!cwd": false
+    }
+  ]
 }
